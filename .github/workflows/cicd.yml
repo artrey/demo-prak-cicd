@@ -52,7 +52,7 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
   deploy:
-#    needs: build
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
